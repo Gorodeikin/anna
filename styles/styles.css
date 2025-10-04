@@ -191,6 +191,7 @@ a:hover {
 }
 
 #header {
+    position: sticky;
     background-color: #333;
     justify-content: center; /* щоб меню стояло посередині */
     align-items: center;
@@ -272,12 +273,12 @@ a:hover {
 /* 📚 Онлайн-заняття */
 #online-lessons .lesson-blocks {
     display: flex;
+    flex-direction: column;
     gap: 30px;
-    flex-wrap: wrap;
 }
 
 #online-lessons .block {
-    flex: 1 1 45%; /* Для двох стовпців */
+    flex: 1 1 100%; /* на всю ширину */
     padding: 25px;
     background-color: #fff;
     border-radius: 8px;
@@ -292,8 +293,8 @@ a:hover {
 
 /* 👩‍👧‍👦 Співпраця */
 .collaboration-gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 30px;
     text-align: center;
 }
