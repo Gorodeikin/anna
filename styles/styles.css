@@ -327,6 +327,71 @@ a:hover {
     margin-bottom: 10px;
 }
 
+/* Блог */
+
+.blog {
+    padding: 50px 0;
+    background: #fafafa;
+  }
+  
+  .blog h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .blog-post {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .blog-post:hover {
+    transform: translateY(-5px);
+  }
+  
+  .blog-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .blog-post h3 {
+    padding: 15px;
+    font-size: 1.3em;
+    color: #444;
+  }
+  
+  .blog-post p {
+    padding: 0 15px 15px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .read-more {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background: goldenrod;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .read-more:hover {
+    background: darkgoldenrod;
+  }
+
 /* 📩 Контакти */
 .contact-content {
     display: flex;
