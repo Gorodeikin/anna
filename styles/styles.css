@@ -117,7 +117,7 @@ body {
     padding: 20px 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: #007bff; /* Основний акцентний колір (синій) */
     margin-bottom: 15px;
 }
@@ -328,6 +328,90 @@ a:hover {
     margin-bottom: 10px;
 }
 
+/* Освита */
+.diplomas {
+    display: flex;
+    gap: 16px; /* расстояние между дипломами */
+    justify-content: center; /* выравнивание по центру (можно left/right) */
+    flex-wrap: wrap; /* чтобы на узких экранах переносились */
+    margin-top: 10px;
+  }
+  
+  .diplomas img {
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+  }
+  
+  .diplomas img:hover {
+    transform: scale(1.05);
+  }
+
+  .gallery-certification {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  
+  .gallery-certification img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .gallery-certification img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  }
+  
+  /* Модальное окно */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    border-radius: 10px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .gallery-certification {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .gallery-certification img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border-radius: 6px;
+  }
+  .gallery-certification img:hover {
+    transform: scale(1.05);
+  }
 /* Блог */
 
 .blog {
@@ -418,12 +502,18 @@ a:hover {
 }
 
 .contacts-links {
+    
     text-align: center;
 }
 
 .contacts-link {
     font-size: 2em;
     margin: 0 10px;
+}
+
+.contacts-icon{
+    width: 70px;
+    height: 70px;  
 }
 
 /* Футер */
@@ -467,8 +557,8 @@ a:hover {
 }
 
 .social-icon {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     fill: currentColor;     /* подкрашиваем SVG в цвет текста */
 }
 /* Адаптивність (Media Queries) */

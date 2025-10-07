@@ -7,6 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+
+    <!-- lightgallery plugins -->
+    <link type="text/css" rel="stylesheet" href="css/lg-zoom.css" />
+    <link type="text/css" rel="stylesheet" href="css/lg-thumbnail.css" />
+
+
+    <!-- OR -->
+
+    <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.css" />
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="alternate" hreflang="it" href="index-it.html">
 </head>
@@ -63,9 +73,9 @@
                     
                     <div class="block interactive-materials">
                         <h3>Презентації та інтерактивні ігри</h3>
-                        <p>PowerPoint-презентації</p>
+                        <h4>PowerPoint-презентації</h4>
                         <div class="video-gallery"></div> 
-                        <p>Інтерактивні ігри </p>
+                        <h4>Інтерактивні ігри </h4>
                         <div class="video-gallery"></div> 
                     </div>
                 </div>
@@ -114,25 +124,66 @@
                 </div>
             </div>
         </section>
-        <section id="Education" class="section light-bg">
+        <section id="education" class="section light-bg">
             <div class="container">
                 <h2> Моя Освiта</h2>
-                <div class="achievement-block author-materials">
-                    <h3>Базова освита</h3>
-                    <div class="material-previews"></div>
-                    
+                <div class="education-basic">
+                    <h3>Базова освіта</h3>
+                    <div class="edu-item">
+                        <p>Какойто Там Институт</p>
+                        <p>Спеціальність: Какаято (2017-2021)</p>
+                        <div class="diplomas">
+                            <img src="./images/education/diplom/magistr1.jpeg" alt="Диплом бакалавра" width="360" />
+                            <img src="./images/education/diplom/magistr2.jpeg" alt="Диплом бакалавра" width="360" />
+                        </div>
+                    </div>
+                    <div class="edu-item">
+                        <p>Какойто Там Институт</p>
+                        <p>Спеціальність: какаято (2017-2021)</p>
+                        <div class="diplomas">
+                            <img src="./images/education/diplom/bakalavr1.jpeg" alt="Диплом бакалавра" width="360" />
+                            <img src="./images/education/diplom/bakalavr2.jpeg" alt="Диплом бакалавра" width="360" />
+                        </div>
+                    </div>
                 </div>
-                <div class="achievement-block author-materials">
+                <div class="education-qualification">
                     <h3>Пидвищення квалификации</h3>
-                    <div class="material-previews"></div>
-                    
+                    <div class="edu-item">
+                        <p></p>
+                        <div class="diplomas">
+                            <img src="./images/education/qualification/qualification.jpg" alt="Диплом бакалавра" width="360" />
+                        </div>
+                    </div>  
                 </div>
-                <div class="achievement-block author-materials">
+                <div class="self-development">
                     <h3>Само освита</h3>
-                    <div class="material-previews"></div>
-                
+                    <div class="gallery-certification">
+                        <img src="./images/education/certificate/certificate-1.jpg" alt="Диплом бакалавра" width="180" />                   
+                        <img src="./images/education/certificate/certificate-2.jpg" alt="Диплом бакалавра" width="180" />
+                        <img src="./images/education/certificate/certificate-3.jpg" alt="Диплом бакалавра" width="180" />
+                        <img src="./images/education/certificate/certificate-4.jpg" alt="Диплом бакалавра" width="180" />                      
+                        <img src="./images/education/certificate/certificate-5.jpg" alt="Диплом бакалавра" width="180" />                       
+                        <img src="./images/education/certificate/certificate-6.jpg" alt="Диплом бакалавра" width="180" />
+                        <img src="./images/education/certificate/certificate-19.jpg" alt="Диплом бакалавра" width="180" />                       
+                        <img src="./images/education/certificate/certificate-8.jpg" alt="Диплом бакалавра" width="180" />
+                        <img src="./images/education/certificate/certificate-9.jpg" alt="Диплом бакалавра" width="180" />
+                        <img src="./images/education/certificate/certificate-10.jpg" alt="Диплом бакалавра" width="180" />
+                        <img src="./images/education/certificate/certificate-18.jpg" alt="Диплом бакалавра" width="180" />                  
+                        <img src="./images/education/certificate/certificate-12.jpg" alt="Диплом бакалавра" width="180" />                     
+                        <img src="./images/education/certificate/certificate-13.jpg" alt="Диплом бакалавра" width="180" />                      
+                        <img src="./images/education/certificate/certificate-1.jpg" alt="Диплом бакалавра" width="180" />                        
+                        <img src="./images/education/certificate/certificate-1.jpg" alt="Диплом бакалавра" width="180" />                        
+                        <img src="./images/education/certificate/certificate-15.jpg" alt="Диплом бакалавра" width="180" />                        
+                        <img src="./images/education/certificate/certificate-16.jpg" alt="Диплом бакалавра" width="180" />                       
+                        <img src="./images/education/certificate/certificate-17.jpg" alt="Диплом бакалавра" width="180" />                       
+                        <img src="./images/education/certificate/certificate-11.jpg" alt="Диплом бакалавра" width="180" />                    
+                        <img src="./images/education/certificate/certificate-7.jpg" alt="Диплом бакалавра" width="180" />
+                    </div>
+                    <div id="imageModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                    </div>
                 </div>
-
             </div>
         </section>
 
@@ -142,7 +193,10 @@
                 
                 <div class="achievement-block author-materials">
                     <h3>Мои досягнення</h3>
-                    <div class="material-previews"></div>
+                    <div class="material-previews">
+                        
+    
+                    </div>
     
                 </div>
                 <div class="achievement-block testimonials">
@@ -205,7 +259,7 @@
                     </a>
                     <a href="https://wa.me/380990022015" target="_blank" class="contacts-link viber">
                         <svg class="contacts-icon">
-                            <use href="./images/icons.svg#icon-whatsapp1"></use>
+                            <use href="./images/icons.svg#icon-viber"></use>
                         </svg>
                     </a>
                 </div>
@@ -223,21 +277,21 @@
                     <li class="footer-social-item">
                         <a class="footer-social-link" href="https://www.youtube.com/" rel="noopener noreferrer" target="_blank">
                             <svg class="social-icon">
-                                <use href="./images/icons.svg#icon-youtube"></use>
+                                <use href="./images/icons.svg#icon-youtube1"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-social-item">
                         <a class="footer-social-link" href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">
                             <svg class="social-icon">
-                                <use href="./images/icons.svg#icon-facebook2"></use>
+                                <use href="./images/icons.svg#icon-facebook1"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-social-item">
                         <a class="footer-social-link" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank">
                             <svg class="social-icon">
-                                <use href="./images/icons.svg#icon-instagram"></use>
+                                <use href="./images/icons.svg#icon-instagram1"></use>
                             </svg>
                         </a>
                     </li>
@@ -245,7 +299,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/script.js"></script>
+    <script src="./js/gallery.js"></script>
 </body>
 </html>
